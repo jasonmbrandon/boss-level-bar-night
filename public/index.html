@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Level Bar Night: nerd nights at LA bars</title>
+<meta name="description" content="A monthly nerd night at an LA bar: video game tournaments with posted prizes, cosplay karaoke and retro games. Sign up to unlock Los Angeles at 100 players.">
+<meta property="og:title" content="Boss Level Bar Night">
+<meta property="og:description" content="Tournaments, cosplay karaoke and retro games at a bar near you. Los Angeles unlocks at 100 signups.">
+<meta property="og:image" content="img/la-skyline.png">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="img/star.png">
+<link rel="preload" href="fonts/albert-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <a class="bar-mark" href="#top" aria-label="Boss Level, back to the top">BL</a>
+  <nav class="bar-links" aria-label="Sections">
+    <a href="#night">The night</a>
+    <a href="#unlock">Unlock LA</a>
+    <a href="#hosts">Hosts</a>
+  </nav>
+  <a class="btn btn-sm" href="#join">Join</a>
+</header>
+
+<main id="main">
+
+<!-- Chapter: title screen -->
+<section class="hero ch ch-black" id="top" data-chapter="title" data-bar-tone="dark">
+  <div class="hero-top">
+    <span class="hero-mono" aria-hidden="true">BL</span>
+    <nav class="hero-links" aria-label="Quick links">
+      <a href="#night">The night</a>
+      <a href="#board">Games</a>
+      <a href="#hosts">Hosts</a>
+      <a class="btn" href="#join" data-cta>Unlock LA</a>
+    </nav>
+  </div>
+  <h1 class="hero-name" aria-label="Boss Level Bar Night">
+    <span class="line"><span class="line-in">Boss</span></span>
+    <span class="line line-2"><span class="line-in">Level</span></span>
+  </h1>
+  <p class="hero-sub" data-hero-sub>A monthly nerd night at an LA bar: tournaments with posted prizes, cosplay karaoke and retro games. Los Angeles unlocks at 100 players.</p>
+  <img class="hero-sprite" src="img/controller.png" alt="" width="320" height="320" aria-hidden="true">
+</section>
+
+<!-- Chapter: the night, pinned scroll scene -->
+<section class="night ch ch-mint" id="night" data-chapter="night" data-night>
+  <div class="night-stage">
+    <div class="night-intro">
+      <h2 class="h-xl" data-reveal>Hour by hour</h2>
+      <p class="lead" data-reveal>Boss Level takes over a bar on its slowest weeknight. Doors at 7, finals by 11, drink specials all night.</p>
+    </div>
+    <div class="clock" aria-hidden="true">
+      <span class="clock-time" data-clock>7:00 pm</span>
+      <span class="clock-track"><span class="clock-fill" data-clock-fill></span></span>
+    </div>
+    <div class="stages" role="tablist" aria-label="The night, hour by hour">
+      <div class="stage is-open" style="--s:#16300f;--si:#fff">
+        <button class="stage-tab" role="tab" aria-selected="true" aria-controls="st-1" id="tab-1" data-time="7:00 pm">Doors open</button>
+        <div class="stage-body" role="tabpanel" id="st-1" aria-labelledby="tab-1">
+          <h3 class="stage-name">Doors open</h3>
+          <p>Check in, grab the drink special and pick your bracket. Retro consoles are on free play from the first minute.</p>
+          <img src="img/drink.png" alt="Pixel pint glass" width="320" height="320" loading="lazy">
+        </div>
+      </div>
+      <div class="stage" style="--s:#2d5a22;--si:#fff">
+        <button class="stage-tab" role="tab" aria-selected="false" aria-controls="st-2" id="tab-2" data-time="7:30 pm">Free play</button>
+        <div class="stage-body" role="tabpanel" id="st-2" aria-labelledby="tab-2">
+          <h3 class="stage-name">Free play</h3>
+          <p>CRTs, couches and the classics. Local game shops bring the systems and sell their stock at a table by the door.</p>
+          <img src="img/arcade.png" alt="Pixel arcade cabinet" width="320" height="320" loading="lazy">
+        </div>
+      </div>
+      <div class="stage" style="--s:#4f8a40;--si:#000">
+        <button class="stage-tab" role="tab" aria-selected="false" aria-controls="st-3" id="tab-3" data-time="8:00 pm">Bracket</button>
+        <div class="stage-body" role="tabpanel" id="st-3" aria-labelledby="tab-3">
+          <h3 class="stage-name">Bracket</h3>
+          <p>Double elimination on the big screen. Entry is posted with each event, and the prize is fixed before signups open.</p>
+          <img src="img/controller.png" alt="Pixel game controller" width="320" height="320" loading="lazy">
+        </div>
+      </div>
+      <div class="stage" style="--s:#76b964;--si:#000">
+        <button class="stage-tab" role="tab" aria-selected="false" aria-controls="st-4" id="tab-4" data-time="9:30 pm">Cosplay karaoke</button>
+        <div class="stage-body" role="tabpanel" id="st-4" aria-labelledby="tab-4">
+          <h3 class="stage-name">Cosplay karaoke</h3>
+          <p>Mic up in character. Theme songs, anime openings, boss battle anthems. Best costume picks the next song.</p>
+          <img src="img/mic.png" alt="Pixel microphone" width="320" height="320" loading="lazy">
+        </div>
+      </div>
+      <div class="stage" style="--s:#b6ee9f;--si:#000">
+        <button class="stage-tab" role="tab" aria-selected="false" aria-controls="st-5" id="tab-5" data-time="10:30 pm">Grand finals</button>
+        <div class="stage-body" role="tabpanel" id="st-5" aria-labelledby="tab-5">
+          <h3 class="stage-name">Grand finals</h3>
+          <p>Finals on the main screen, prizes handed over on the spot, and next month's date announced before last call.</p>
+          <img src="img/trophy.png" alt="Pixel trophy" width="320" height="320" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter: what's on the board -->
+<section class="board ch ch-lemon" id="board" data-chapter="board">
+  <h2 class="h-xl" data-reveal>What's on the board</h2>
+  <div class="menu">
+    <div class="menu-col">
+      <div class="menu-head" data-reveal><h3>Tournaments</h3><span>4 games</span></div>
+      <ul class="menu-list">
+        <li data-reveal><img src="img/controller.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Super Smash Bros. Ultimate</strong><span>$10 entry</span></p><p class="mi-desc">Singles and doubles. Bring your own controller or play on ours.</p></div></li>
+        <li data-reveal><img src="img/sword.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Street Fighter 6</strong><span>$10 entry</span></p><p class="mi-desc">Best of three, best of five from top eight.</p></div></li>
+        <li data-reveal><img src="img/kart.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Mario Kart 8 Deluxe</strong><span>$5 entry</span></p><p class="mi-desc">Four-player heats. The friendliest bracket of the night.</p></div></li>
+        <li data-reveal><img src="img/cartridge.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Retro speedrun</strong><span>Free</span></p><p class="mi-desc">Fastest World 1-1 on an original console. Leaderboard all night.</p></div></li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <div class="menu-head" data-reveal><h3>Side quests</h3><span>4 extras</span></div>
+      <ul class="menu-list">
+        <li data-reveal><img src="img/mic.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Cosplay karaoke</strong><span>Free</span></p><p class="mi-desc">Openings, theme songs and duets. Costumes get the mic first.</p></div></li>
+        <li data-reveal><img src="img/star.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Anime trivia</strong><span>Free</span></p><p class="mi-desc">Teams of four, three rounds, an openings round to finish.</p></div></li>
+        <li data-reveal><img src="img/arcade.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Retro free play</strong><span>Free</span></p><p class="mi-desc">NES to GameCube on CRTs, set up by local game shops.</p></div></li>
+        <li data-reveal><img src="img/drink.png" alt="" width="64" height="64" loading="lazy"><div><p class="mi-top"><strong>Drink specials</strong><span>All night</span></p><p class="mi-desc">Set by the host bar for Boss Level players, posted with the event.</p></div></li>
+      </ul>
+    </div>
+  </div>
+  <p class="board-note" data-reveal>Prizes are fixed and posted before signups open. Boss Level and its sponsors pay them; they never come out of entry fees, and there is no betting on matches.</p>
+</section>
+
+<!-- Chapter: the unlock count, the live thing -->
+<section class="unlock ch ch-cyan" id="unlock" data-chapter="unlock">
+  <h2 class="unlock-claim" data-reveal>Los Angeles unlocks at 100</h2>
+  <div class="unlock-figure" data-reveal>
+    <p class="figure"><span data-count>0</span><sup>/100</sup></p>
+    <div class="xp" role="progressbar" aria-label="Los Angeles signups toward 100" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-xp>
+      <span class="xp-fill" data-xp-fill></span>
+    </div>
+    <p class="caption" data-count-caption>Players in the Los Angeles area who have signed up. At 100, we book a bar, set the date and email this list first.</p>
+    <a class="btn btn-ink" href="#join">Add your name</a>
+  </div>
+  <img class="unlock-art" src="img/la-skyline.png" alt="Pixel Los Angeles skyline at dusk with palm trees" width="960" height="480" loading="lazy" data-parallax>
+</section>
+
+<!-- Chapter: pick your main -->
+<section class="mains ch ch-black" id="mains" data-chapter="mains">
+  <div class="disc-wrap" aria-live="polite">
+    <div class="disc" data-disc></div>
+    <img class="disc-obj" src="img/controller.png" alt="Pixel game controller" width="320" height="320" loading="lazy" data-disc-obj>
+  </div>
+  <div class="mains-list">
+    <h2 class="mains-h" data-reveal>Pick your main</h2>
+    <ul role="list">
+      <li><button type="button" class="main is-on" aria-pressed="true" data-main="fighting" data-img="controller" data-alt="Pixel game controller" data-colour="#93f1f7" data-fact="Smash, Street Fighter and whatever the Discord votes in next.">Fighting games</button></li>
+      <li><button type="button" class="main" aria-pressed="false" data-main="racing" data-img="kart" data-alt="Pixel kart" data-colour="#fbb65c" data-fact="Four-player Mario Kart heats, blue shells and all.">Kart racing</button></li>
+      <li><button type="button" class="main" aria-pressed="false" data-main="retro" data-img="arcade" data-alt="Pixel arcade cabinet" data-colour="#f3ea7a" data-fact="Cartridges, CRTs and the speedrun leaderboard.">Retro free play</button></li>
+      <li><button type="button" class="main" aria-pressed="false" data-main="karaoke" data-img="mic" data-alt="Pixel microphone" data-colour="#9ae187" data-fact="Anime openings sung in full costume.">Cosplay karaoke</button></li>
+      <li><button type="button" class="main" aria-pressed="false" data-main="trivia" data-img="star" data-alt="Pixel star" data-colour="#b9c8ff" data-fact="Teams of four, three rounds, no phones.">Anime trivia</button></li>
+    </ul>
+    <p class="disc-fact" data-disc-fact>Smash, Street Fighter and whatever the Discord votes in next.</p>
+  </div>
+</section>
+
+<!-- Chapter: practice round mini-game -->
+<section class="practice ch ch-orange" id="practice" data-chapter="practice">
+  <div class="practice-copy">
+    <h2 class="h-xl" data-reveal>Practice round</h2>
+    <p class="lead" data-reveal>Parry the boss. Hit the button when the marker crosses the window. Five swings; three perfects earns the frame-perfect badge.</p>
+    <p class="best" data-reveal>Best this session: <strong data-best>0</strong> points</p>
+  </div>
+  <div class="game" data-game>
+    <div class="game-top">
+      <p class="game-boss">Boss HP</p>
+      <div class="hp"><span class="hp-fill" data-hp></span></div>
+    </div>
+    <div class="lane" data-lane aria-hidden="true">
+      <span class="lane-window" data-window></span>
+      <span class="lane-mark" data-mark></span>
+    </div>
+    <p class="game-msg" role="status" data-msg>Press Parry to start. Space works too.</p>
+    <div class="game-row">
+      <button type="button" class="btn btn-ink btn-xl" data-parry>Parry</button>
+      <p class="game-score">Swing <strong data-swing>0</strong>/5 · Score <strong data-score>0</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter: hosts and sponsors -->
+<section class="hosts ch ch-blue" id="hosts" data-chapter="hosts">
+  <div class="panel">
+    <div class="panel-left">
+      <h2 class="panel-h" data-reveal>Your slowest night, packed</h2>
+      <div class="shape" data-reveal>
+        <img src="img/bar-night.png" alt="Pixel bar with a tournament bracket on the screen" width="960" height="600" loading="lazy">
+      </div>
+    </div>
+    <div class="panel-right">
+      <div class="pblock" data-reveal>
+        <h3>For bars</h3>
+        <p>Boss Level brings the players, the screens and the run of show to your quietest weeknight. You set a drink special and keep the bar.</p>
+      </div>
+      <div class="pblock" data-reveal>
+        <h3>For game shops</h3>
+        <p>Sponsor a prize, bring your systems for free play and sell carts, cards and figures at a table by the door.</p>
+      </div>
+      <a class="btn" href="#join" data-role-link="bar" data-reveal>Host or sponsor a night</a>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter: questions -->
+<section class="faq ch ch-black" id="faq" data-chapter="faq">
+  <h2 class="faq-h" data-reveal>Questions, answered</h2>
+  <div class="faq-list">
+    <details name="faq" data-reveal><summary>Is it 21 and over?<i aria-hidden="true"></i></summary><p>Yes. Every Boss Level night is at a bar, so it's 21+ with ID at the door.</p></details>
+    <details name="faq" data-reveal><summary>What does it cost to get in?<i aria-hidden="true"></i></summary><p>Walking in is free. Tournaments carry a small entry posted with each event; trivia, karaoke and free play cost nothing.</p></details>
+    <details name="faq" data-reveal><summary>Where do the prizes come from?<i aria-hidden="true"></i></summary><p>Prizes are fixed and announced before signups open. Boss Level and its sponsors pay them, not the entry fees, and there's no betting on matches.</p></details>
+    <details name="faq" data-reveal><summary>Do I have to cosplay?<i aria-hidden="true"></i></summary><p>No. Come as you are. A costume just gets you the karaoke mic first.</p></details>
+    <details name="faq" data-reveal><summary>When does LA get a date?<i aria-hidden="true"></i></summary><p>When the Los Angeles count reaches 100. Then we book a bar, set the date and email this list before anyone else hears.</p></details>
+    <details name="faq" data-reveal><summary>Can it come to my city?<i aria-hidden="true"></i></summary><p>Yes. Type your city when you sign up. Every city keeps its own count, and the next one to 100 is next on the map.</p></details>
+    <details name="faq" data-reveal><summary>What's the Discord for?<i aria-hidden="true"></i></summary><p>Finding teammates, practicing before brackets, voting on games and hearing about new cities first.</p></details>
+    <details name="faq" data-reveal><summary>I run a bar or a game shop.<i aria-hidden="true"></i></summary><p>Choose "I run a bar" or "I run a game shop" when you sign up and we'll get in touch about hosting or sponsoring.</p></details>
+  </div>
+</section>
+
+<!-- Chapter: sign up -->
+<section class="join ch ch-mint" id="join" data-chapter="join">
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track" data-strip>
+      <img src="img/controller.png" alt="" width="150" height="150"><img src="img/arcade.png" alt="" width="150" height="150"><img src="img/la-skyline.png" alt="" width="300" height="150"><img src="img/mic.png" alt="" width="150" height="150"><img src="img/trophy.png" alt="" width="150" height="150"><img src="img/bar-night.png" alt="" width="240" height="150"><img src="img/kart.png" alt="" width="150" height="150"><img src="img/sword.png" alt="" width="150" height="150"><img src="img/cartridge.png" alt="" width="150" height="150"><img src="img/star.png" alt="" width="150" height="150"><img src="img/drink.png" alt="" width="150" height="150">
+    </div>
+  </div>
+  <h2 class="h-xl" data-reveal>Unlock your city</h2>
+  <form class="signup" data-signup novalidate>
+    <fieldset class="roles" data-reveal>
+      <legend>I'm signing up as</legend>
+      <label><input type="radio" name="role" value="player" checked> A player</label>
+      <label><input type="radio" name="role" value="bar"> I run a bar</label>
+      <label><input type="radio" name="role" value="shop"> I run a game shop</label>
+    </fieldset>
+    <div class="cells" data-reveal>
+      <label class="cell"><span class="sr">Email</span><input type="email" name="email" autocomplete="email" placeholder="Your email" required aria-describedby="fine-1"></label>
+      <label class="cell"><span class="sr">City</span><input type="text" name="city" list="cities" autocomplete="address-level2" placeholder="Your city" value="Los Angeles" required></label>
+      <button class="cell cell-go" type="submit">Join the party</button>
+    </div>
+    <datalist id="cities">
+      <option value="Los Angeles"></option><option value="Burbank"></option><option value="North Hollywood"></option><option value="Glendale"></option><option value="Pasadena"></option><option value="Long Beach"></option><option value="Santa Monica"></option><option value="San Fernando Valley"></option><option value="San Diego"></option><option value="Las Vegas"></option><option value="Phoenix"></option><option value="Tampa"></option>
+    </datalist>
+    <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fine">
+      <p id="fine-1">One email when your city unlocks, plus event news. Unsubscribe any time. Events are 21+.</p>
+      <p>LA-area towns count toward Los Angeles.</p>
+    </div>
+    <p class="form-msg" role="status" data-form-msg></p>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot ch ch-lemon" id="foot" data-chapter="foot">
+  <div class="foot-top">
+    <p><strong>Boss Level Bar Night</strong></p>
+    <p>Nerd nights at bars on slow weeknights.</p>
+    <p>Starting in Los Angeles.</p>
+    <a href="#top">Back to the top</a>
+  </div>
+  <a class="foot-line" href="#" data-discord>Join the Discord</a>
+  <div class="foot-meta">
+    <p><a href="#night">The night</a> · <a href="#unlock">Unlock LA</a> · <a href="#hosts">Hosts</a></p>
+    <p>Pixel art drawn for Boss Level <button type="button" class="coin" data-coin aria-label="A hidden coin. Collect it"><img src="img/star.png" alt="" width="28" height="28"></button></p>
+    <p>Los Angeles · 2026</p>
+  </div>
+</footer>
+
+<!-- HUD: XP and achievements -->
+<div class="hud" data-hud>
+  <button type="button" class="hud-btn" aria-expanded="false" aria-controls="card" data-hud-btn>
+    <span>Lv <strong data-lv>1</strong></span>
+    <span class="hud-xp"><span data-hud-xp></span></span>
+    <span><strong data-ach-n>0</strong>/11</span>
+  </button>
+  <div class="card" id="card" hidden data-card>
+    <h2 class="card-h">Player card</h2>
+    <p class="card-sub" data-card-sub>Explore the site to earn badges. Collect all eleven for the founder title.</p>
+    <ul class="ach" data-ach-list></ul>
+  </div>
+</div>
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "boss-level-bar-night",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" }
+}
