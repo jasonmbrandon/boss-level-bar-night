@@ -1,6 +1,6 @@
 # Boss Level Bar Night
 
-Signup site for Boss Level Bar Night: monthly nerd nights at bars on slow weeknights. Each city unlocks at 100 player signups.
+Signup site for Boss Level Bar Night: monthly nerd nights at bars and restaurants on slow weeknights. Each city unlocks at 100 player signups.
 
 ## Structure
 

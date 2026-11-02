@@ -202,7 +202,7 @@
     if (countLoaded) return; countLoaded = true;
     fetch('/api/count?city=' + CONFIG.defaultCity).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
       if (d && typeof d.count === 'number') showCount(d.count);
-      else capEl.textContent = 'The live count turns on when signups open. At 100 Los Angeles players, we book a bar, set the date and email this list first.';
+      else capEl.textContent = 'The live count turns on when signups open. At 100 Los Angeles players, we book a venue, set the date and email this list first.';
     }).catch(function () {});
   }
 
