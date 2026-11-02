@@ -1,7 +1,8 @@
 /* Boss Level Bar Night — colour chapters on black */
 @font-face {
   font-family: "Albert Sans";
-  src: url("fonts/albert-sans.woff2") format("woff2");
+  src: url("fonts/albert-sans.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/npm/@fontsource-variable/albert-sans@5.3.0/files/albert-sans-latin-wght-normal.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
